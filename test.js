@@ -1,7 +1,16 @@
 export default {
     data() {
         return {
-            message : "Hello world"
+            count : 0
         }
     },
+    methods : {
+        output() {
+            alert(this.count);
+        }, 
+        add() {
+            ++this.count;
+        }
+    },
+    template: `<button @click = "add();output();">count is {{ count }}</button>`
 }
