@@ -12,5 +12,5 @@ export default {
             ++this.count;
         }
     },
-    template: `<button @click = "add();output();">count is {{ count }}</button>`
+    template: `<button @click = "add">count is {{ count }}</button>`
 }
